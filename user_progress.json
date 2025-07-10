@@ -1,0 +1,37 @@
+{
+  "admin": {
+    "score": 0,
+    "total": 22,
+    "attempted": false
+  },
+  "kuldeep": {
+    "score": 0,
+    "total": 22,
+    "attempted": false
+  },
+  "pravalika": {
+    "score": 0,
+    "total": 22,
+    "attempted": false
+  },
+  "akash": {
+    "score": 0,
+    "total": 22,
+    "attempted": false
+  },
+  "testing": {
+    "score": 7,
+    "total": 22,
+    "attempted": true
+  },
+  "testing1": {
+    "score": 3,
+    "total": 22,
+    "attempted": true
+  },
+  "testing2": {
+    "score": 6,
+    "total": 22,
+    "attempted": true
+  }
+}

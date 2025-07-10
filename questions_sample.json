@@ -1,0 +1,244 @@
+[
+  {
+    "question": "What is the primary purpose of role-based access control (RBAC) in SAP Fiori?",
+    "options": [
+      "To encrypt sensitive data displayed in Fiori applications",
+      "To manage user authentication and single sign-on (SSO)",
+      "To define and enforce user authorizations for Fiori applications and features",
+      "To monitor and audit user activities in Fiori applications"
+    ],
+    "correct_option": "To define and enforce user authorizations for Fiori applications and features",
+    "explanation": "RBAC in SAP Fiori ensures users only access features and applications necessary for their roles, improving security and compliance."
+  },
+  {
+    "question": "Which of the following is a key component of SAP Fiori security?",
+    "options": [
+      "SAP HANA database encryption",
+      "SAP Gateway server",
+      "SAP Solution Manager",
+      "SAP Identity Management (IDM)"
+    ],
+    "correct_option": "SAP Gateway server",
+    "explanation": "SAP Gateway server handles OData communication and authorizations between front-end and back-end systems in Fiori architecture."
+  },
+  {
+    "question": "What is the purpose of the SAP Fiori Launchpad in the context of security?",
+    "options": [
+      "To manage user authentication and single sign-on (SSO)",
+      "To define and assign user roles and authorizations",
+      "To provide a centralized, role-based access point for Fiori applications",
+      "To encrypt sensitive data displayed in Fiori applications"
+    ],
+    "correct_option": "To provide a centralized, role-based access point for Fiori applications",
+    "explanation": "SAP Fiori Launchpad offers users a personalized, secure entry point to Fiori apps based on their roles."
+  },
+  {
+    "question": "Which of the following is a best practice for securing SAP Fiori applications?",
+    "options": [
+      "Granting all users access to all Fiori applications by default",
+      "Disabling role-based access control (RBAC) to simplify user management",
+      "Defining granular, task-specific roles and authorizations for Fiori users",
+      "Using a single, generic role for all Fiori users to ensure consistency"
+    ],
+    "correct_option": "Defining granular, task-specific roles and authorizations for Fiori users",
+    "explanation": "Granular roles minimize access risk and align better with job responsibilities, which enhances security."
+  },
+  {
+    "question": "What is the significance of the /IWFND/ERROR_LOG transaction in SAP Fiori security?",
+    "options": [
+      "It displays the security audit logs for Fiori applications",
+      "It manages user roles and authorizations for Fiori applications",
+      "It monitors system performance and resource utilization in Fiori",
+      "It shows the error messages and logs related to Fiori security and configuration"
+    ],
+    "correct_option": "It shows the error messages and logs related to Fiori security and configuration",
+    "explanation": "This transaction provides detailed logs of Fiori OData errors, helping troubleshoot authorization and connectivity issues."
+  },
+  {
+    "question": "What is the role of the SAP Fiori Client in the context of security?",
+    "options": [
+      "To manage user authentication and single sign-on (SSO) for Fiori applications",
+      "To define and enforce user authorizations for Fiori applications and features",
+      "To provide secure, offline access to Fiori applications on mobile devices",
+      "To monitor and audit user activities in Fiori applications"
+    ],
+    "correct_option": "To provide secure, offline access to Fiori applications on mobile devices",
+    "explanation": "The SAP Fiori Client is a mobile app that enhances user experience and provides secure access to Fiori apps on mobile."
+  },
+  {
+    "question": "Which of the following T-code we have to use to create and maintain user groups in the SAP system?",
+    "options": [
+      "Transaction code SUGR",
+      "Transaction code SUGG",
+      "Transaction code SURR",
+      "Transaction code SUUR"
+    ],
+    "correct_option": "Transaction code SUGR",
+    "explanation": "SUGR is the transaction code used for maintaining user groups in SAP."
+  },
+  {
+    "question": "Which of the following tables contains user master information?",
+    "options": [
+      "USR* table",
+      "AGR* tables",
+      "USH*",
+      "All of the above"
+    ],
+    "correct_option": "USR* table",
+    "explanation": "USR* tables (like USR02, USR21) contain core user master data in SAP."
+  },
+  {
+    "question": "Which of the following tables contains data about roles?",
+    "options": [
+      "AGR* tables",
+      "USR* table",
+      "USH* table",
+      "All of the above"
+    ],
+    "correct_option": "AGR* tables",
+    "explanation": "AGR* tables (e.g., AGR_1251) store role definitions and assignments."
+  },
+  {
+    "question": "_________ objects are maintained in SU24 for a particular transaction code.",
+    "options": [
+      "Authorization",
+      "Authorization roles",
+      "Admin roles",
+      "User roles"
+    ],
+    "correct_option": "Authorization",
+    "explanation": "SU24 maintains authorization objects proposed for a transaction which are used in role maintenance."
+  },
+  {
+    "question": "Which of the following components is responsible for managing user authentication and authorization in SAP Fiori?",
+    "options": [
+      "SAP Gateway",
+      "SAP HANA database",
+      "SAP Fiori Launchpad",
+      "SAP NetWeaver Application Server"
+    ],
+    "correct_option": "SAP Gateway",
+    "explanation": "The SAP Gateway acts as the central entry point for SAP Fiori applications, handling OData services and managing authentication and authorization checks between the Fiori frontend and the backend SAP system."
+  },
+  {
+    "question": "Which of the following tools is commonly used for administering and configuring SAP Fiori applications?",
+    "options": [
+      "SAP Solution Manager",
+      "SAP HANA Studio",
+      "SAP Web Dispatcher",
+      "SAP Fiori Configuration Cockpit"
+    ],
+    "correct_option": "SAP Fiori Configuration Cockpit",
+    "explanation": "The SAP Fiori Configuration Cockpit (often accessed via Fiori Launchpad Designer or specific Fiori apps) is the primary tool for administering and configuring Fiori applications, including tile catalogs, groups, and roles."
+  },
+  {
+    "question": "SUIM makes you compare two _________across the two systems.",
+    "options": [
+      "Users",
+      "Roles",
+      "profiles, authorizations, and user comparison",
+      "all of the above"
+    ],
+    "correct_option": "all of the above",
+    "explanation": "SUIM (User Information System) is a comprehensive tool in SAP that allows administrators to compare various security-related objects, including users, roles, profiles, and authorizations, across different systems or within the same system."
+  },
+  {
+    "question": "Which of the following is a best practice for role design in SAP S/4HANA?",
+    "options": [
+      "Granting all users the SAP_ALL profile for maximum flexibility",
+      "Creating roles based on job functions and responsibilities",
+      "Assigning multiple conflicting roles to users to ensure access to all necessary transactions",
+      "Defining roles with broad authorizations to reduce the number of roles needed"
+    ],
+    "correct_option": "Creating roles based on job functions and responsibilities",
+    "explanation": "Best practice for role design involves aligning roles with specific job functions and responsibilities, adhering to the principle of least privilege, and mitigating Segregation of Duties (SoD) conflicts."
+  },
+  {
+    "question": "Which of the following can be customized in ARM screens?",
+    "options": [
+      "Risk analysis and mitigation procedures",
+      "User provisioning and access request workflows",
+      "System performance monitoring tools",
+      "System landscape and transport management"
+    ],
+    "correct_option": "User provisioning and access request workflows",
+    "explanation": "ARM (Access Request Management) screens in SAP GRC are primarily used for managing the lifecycle of user access requests, including defining and customizing the workflows for provisioning and approving access."
+  },
+  {
+    "question": "What is the purpose of parameter setting in Access Request Management?",
+    "options": [
+      "Defining user roles and authorizations",
+      "Monitoring system performance and availability",
+      "Configuring global settings and behavior for access requests",
+      "Configuring system landscapes and transport routes"
+    ],
+    "correct_option": "Configuring global settings and behavior for access requests",
+    "explanation": "Parameter settings in GRC ARM control various aspects of how access requests behave, such as default values, notification settings, and integration with other systems."
+  },
+  {
+    "question": "Which of the following can be configured in provisioning settings in Access Request Management?",
+    "options": [
+      "User access controls and segregation of duties",
+      "Risk analysis and mitigation procedures",
+      "System performance monitoring tools",
+      "Default provisioning rules and workflows"
+    ],
+    "correct_option": "Default provisioning rules and workflows",
+    "explanation": "Provisioning settings in ARM allow you to define how access is automatically granted or revoked based on rules, and to configure the specific workflows involved in the provisioning process."
+  },
+  {
+    "question": "What is the purpose of configuring and maintaining the rule set in Access Risk Analysis?",
+    "options": [
+      "Defining user roles and authorizations",
+      "Monitoring system performance and availability",
+      "Identifying and mitigating access risks in the system",
+      "Configuring system landscapes and transport routes"
+    ],
+    "correct_option": "Identifying and mitigating access risks in the system",
+    "explanation": "The rule set in Access Risk Analysis (ARA) defines the Segregation of Duties (SoD) conflicts and critical access violations that the system checks for, enabling the identification and subsequent mitigation of these risks."
+  },
+  {
+    "question": "What are the steps involved in auditing GRC Access Control?",
+    "options": [
+      "Risk identification, risk analysis, risk mitigation",
+      "Data extraction, data analysis, data visualization",
+      "Planning, fieldwork, reporting, follow-up",
+      "User provisioning, access request management, role management"
+    ],
+    "correct_option": "Planning, fieldwork, reporting, follow-up",
+    "explanation": "The general steps involved in auditing any system, including GRC Access Control, follow a standard audit methodology: Planning (defining scope, objectives), Fieldwork (gathering evidence, performing tests), Reporting (communicating findings), and Follow-up (verifying remediation actions)."
+  },
+  {
+    "question": "Which of the following components are part of the initial configuration in SAP GRC Access Control?",
+    "options": [
+      "User provisioning and access request workflows",
+      "Risk analysis and remediation procedures",
+      "System performance monitoring tools",
+      "System landscape and transport management"
+    ],
+    "correct_option": "System landscape and transport management",
+    "explanation": "Initial configuration of SAP GRC Access Control typically involves setting up the system landscape (connecting GRC to target SAP systems) and configuring transport management for moving configurations between development, quality, and production environments."
+  },
+  {
+    "question": "Which of the following can be customized in MSMP & BRF+Rules workflow?",
+    "options": [
+      "User provisioning and access request workflows",
+      "Risk analysis and mitigation procedures",
+      "System performance monitoring tools",
+      "Approval steps and decision rules"
+    ],
+    "correct_option": "Approval steps and decision rules",
+    "explanation": "MSMP (Multi-Stage Multi-Path) workflow and BRF+ (Business Rule Framework plus) are powerful tools within SAP GRC Process Control and Access Control used to customize complex approval workflows, define routing rules, and implement granular decision logic for various processes."
+  },
+  {
+    "question": "Write different types of roles in SAP security and explain them?",
+    "options": [
+      "Single Roles, Composite Roles, Derived Roles, Reference Roles",
+      "User Roles, Admin Roles, System Roles",
+      "Technical Roles, Business Roles, Functional Roles",
+      "Primary Roles, Secondary Roles, Tertiary Roles"
+    ],
+    "correct_option": "Single Roles, Composite Roles, Derived Roles, Reference Roles",
+    "explanation": "The main types of roles in SAP security are Single Roles (for specific authorizations), Composite Roles (grouping single roles), Derived Roles (inheriting from a master role with organizational level variations), and Reference Roles (used in HR for structural authorizations)."
+  }
+]
