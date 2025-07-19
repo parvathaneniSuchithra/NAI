@@ -1,0 +1,30 @@
+{
+  "admin": {
+    "password": "adminpassword",
+    "role": "admin"
+  },
+  "kuldeep": {
+    "password": "Password@123",
+    "role": "student"
+  },
+  "pravalika": {
+    "password": "Password@123",
+    "role": "student"
+  },
+  "akash": {
+    "password": "Password@123",
+    "role": "student"
+  },
+  "testing": {
+    "password": "Password@123",
+    "role": "student"
+  },
+  "testing1": {
+    "password": "Password@123",
+    "role": "student"
+  },
+  "testing2": {
+    "password": "Password@123",
+    "role": "student"
+  }
+}
