@@ -325,6 +325,45 @@ def apply_custom_css(theme):
             [data-testid="stButton-next_question_submit_quiz_internal_btn"] {{
                 display: none !important;
             }}
+
+            /* Specific styles for tables/dataframes in admin sections */
+            .stDataFrame table {{
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 1rem;
+                background-color: var(--card-background); /* Table background */
+                border-radius: var(--border-radius);
+                overflow: hidden; /* Ensures rounded corners apply to table */
+                box-shadow: var(--shadow);
+            }}
+            .stDataFrame th {{
+                background-color: var(--primary-color);
+                color: var(--card-background); /* Header text color */
+                padding: 0.8rem 1.2rem;
+                text-align: left;
+                font-weight: 600;
+                border-bottom: 2px solid var(--border-color);
+            }}
+            .stDataFrame td {{
+                padding: 0.8rem 1.2rem;
+                border-bottom: 1px solid var(--border-color);
+                color: var(--text-color); /* Cell text color */
+            }}
+            .stDataFrame tr:nth-child(even) {{
+                background-color: var(--accent-light); /* Alternate row background */
+            }}
+            .stDataFrame tr:hover {{
+                background-color: rgba(var(--primary-color-rgb), 0.1); /* Hover effect for rows */
+            }}
+
+            /* Ensure text in columns within admin sections has correct color */
+            .st-emotion-cache-1r6slb0 {{ /* Target Streamlit column content div */
+                color: var(--text-color);
+            }}
+            /* Specific targeting for checkbox labels */
+            .stCheckbox > label {{
+                color: var(--text-color);
+            }}
         </style>
     """, unsafe_allow_html=True)
 
@@ -925,11 +964,11 @@ def manage_users_section():
     # Create columns for header
     col_header_user, col_header_role, col_header_action = st.columns([0.4, 0.3, 0.3])
     with col_header_user:
-        st.markdown("**Username**")
+        st.markdown("<span style='color: var(--primary-color); font-weight: 600;'>Username</span>", unsafe_allow_html=True)
     with col_header_role:
-        st.markdown("**Role**")
+        st.markdown("<span style='color: var(--primary-color); font-weight: 600;'>Role</span>", unsafe_allow_html=True)
     with col_header_action:
-        st.markdown("**Action**")
+        st.markdown("<span style='color: var(--primary-color); font-weight: 600;'>Action</span>", unsafe_allow_html=True)
     st.markdown("---")
 
     for u in list(st.session_state.users.keys()): # Iterate over a copy of keys for safe deletion
@@ -937,9 +976,9 @@ def manage_users_section():
         col_user, col_role, col_delete_btn = st.columns([0.4, 0.3, 0.3])
         
         with col_user:
-            st.write(u)
+            st.markdown(f"<span style='color: var(--text-color);'>{u}</span>", unsafe_allow_html=True)
         with col_role:
-            st.write(user_data["role"])
+            st.markdown(f"<span style='color: var(--text-color);'>{user_data['role']}</span>", unsafe_allow_html=True)
         
         with col_delete_btn:
             if u == st.session_state.username: # Current logged-in admin cannot delete themselves
